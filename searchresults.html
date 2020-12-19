@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/extrastyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<title>Randevu Sepeti'ne Hoşgeldiniz</title>
+</head>
+
+<body>
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-back shadow">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<a class="navbar-brand navbar-link" href="#">
+					<img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
+						class="d-inline-block align-top" alt="">
+					Bootstrap
+				</a>
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link px-4 navbar-link" href="#top">Ana Sayfa <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-4 navbar-link" href="#kesfet">Keşfet</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-4 navbar-link" href="#ogren">Öğren</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<button class="btn btn-sign-in my-2 my-sm-0" type="submit">Giriş Yap</button>
+				</form>
+			</div>
+		</nav>
+		<main>
+			<!-- BEGIN search area -->
+			<section class="py-5 bg-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-5 col-12">
+							<!-- BEGIN Search area-->
+							<div class="row pt-5 justify-content-center">
+								<div class="col-sm-12">
+									<div class="input-group mb-3">
+										<input type="text" class="form-control form-control-lg font-weight-500"
+											placeholder="Arama">
+										<div class="input-group-append">
+											<button class="btn btn-outline-secondary bg-aqua border-aqua text-white"
+												type="button">Ara</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row pt-3">
+								<div class="col-md-4 col-sm-12">
+									<div class="btn-group dropdowns dropdwonscenter">
+
+										<input type="text" class="form-control form-control-md font-weight-500"
+											id="datetimepicker">
+										<!-- Datetime picker-->
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-12 my-md-0 my-2">
+									<div class="btn-group dropdowns dropdwonscenter">
+										<select class="form-control form-control-md font-weight-500">
+											<option> Lokasyon </option>
+											<option> Another Action </option>
+											<option> Somethings Another Action </option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-12">
+									<div class="btn-group dropdowns">
+										<select class="form-control form-control-md font-weight-500">
+											<option> Kategori </option>
+											<option> Another Action </option>
+											<option> Somethings Another Action </option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col mt-md-3 mt-2">999 Sonuç Bulundu</div>
+					</div>
+					<!-- END Search area-->
+					<!-- BEGIN Results-->
+					<div class="row my-md-3 my-2">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<div class="row">
+												<div class="col-md-9">
+													<button
+														class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+														type="button" data-toggle="collapse" data-target="#collapseOne"
+														aria-expanded="false" aria-controls="collapseOne">
+														4.5/5 Kuaför Hasan
+													</button>
+												</div>
+												<div class="col-md-2">
+													<button
+														class="btn collapsed width-100 text-center bg-aqua color-white"
+														type="button">
+														Firmayı Görüntüle
+													</button>
+												</div>
+												<div class="col-md-1">
+													<button class="btn btn-link width-100 " type="button"
+														data-toggle="collapse" data-target="#collapseOne">
+														<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+															fill="#1ab5c1" class="bi bi-caret-down-square-fill"
+															viewBox="0 0 16 16">
+															<path fill-rule="evenodd"
+																d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+														</svg>
+													</button>
+												</div>
+											</div>
+										</h2>
+									</div>
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+										data-parent="#accordionExample">
+										<div class="card-body">
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row my-md-3 my-2">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<div class="row">
+												<div class="col-md-9">
+													<button
+														class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+														type="button">
+														4.5/5 Kuaför Mehmet
+													</button>
+												</div>
+												<div class="col-md-3">
+													<button
+														class="btn collapsed width-100 text-center btn-primary bg-aqua border-aqua"
+														type="button">
+														Firmayı Görüntüle
+													</button>
+												</div>
+											</div>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row my-md-3 my-2">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingTwone">
+										<h2 class="mb-0">
+											<div class="row">
+												<div class="col-md-9">
+													<button
+														class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+														type="button" data-toggle="collapse" data-target="#collapseTwo"
+														aria-expanded="false" aria-controls="collapseOne">
+														4.5/5 Kuaför Hasan
+													</button>
+												</div>
+												<div class="col-md-2">
+													<button
+														class="btn collapsed width-100 text-center bg-aqua color-white"
+														type="button">
+														Firmayı Görüntüle
+													</button>
+												</div>
+												<div class="col-md-1">
+													<button class="btn btn-link width-100 " type="button"
+														data-toggle="collapse" data-target="#collapseTwo">
+														<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+															fill="#1ab5c1" class="bi bi-caret-down-square-fill"
+															viewBox="0 0 16 16">
+															<path fill-rule="evenodd"
+																d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+														</svg>
+													</button>
+												</div>
+											</div>
+										</h2>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+										data-parent="#accordionExample">
+										<div class="card-body">
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row my-md-3 my-2">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<div class="row">
+												<div class="col-md-9">
+													<button
+														class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+														type="button">
+														4.5/5 Kuaför Mehmet
+													</button>
+												</div>
+												<div class="col-md-3">
+													<button
+														class="btn collapsed width-100 text-center btn-primary bg-aqua border-aqua"
+														type="button">
+														Firmayı Görüntüle
+													</button>
+												</div>
+											</div>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row my-md-3 my-2">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<div class="row">
+												<div class="col-md-9">
+													<button
+														class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+														type="button" data-toggle="collapse" data-target="#collapseOne"
+														aria-expanded="false" aria-controls="collapseOne">
+														4.5/5 Kuaför Hasan
+													</button>
+												</div>
+												<div class="col-md-2">
+													<button
+														class="btn collapsed width-100 text-center bg-aqua color-white"
+														type="button">
+														Firmayı Görüntüle
+													</button>
+												</div>
+												<div class="col-md-1">
+													<button class="btn btn-link width-100 " type="button"
+														data-toggle="collapse" data-target="#collapseOne">
+														<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+															fill="#1ab5c1" class="bi bi-caret-down-square-fill"
+															viewBox="0 0 16 16">
+															<path fill-rule="evenodd"
+																d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+														</svg>
+													</button>
+												</div>
+											</div>
+										</h2>
+									</div>
+									<div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+										data-parent="#accordionExample">
+										<div class="card-body">
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+											<div class="row border border-aqua rounded my-md-1 my-1">
+												<div class="col-md-3 col-6 my-md-3 my-2">Koltuk-1</div>
+												<div class="col-md-6 col-12 my-md-3 my-2">10 Adet Müsait</div>
+												<div class="col-md-3 col-6 my-md-2 my-2">
+													<button
+														class="btn collapsed width-100 text-center btn-primary border-aqua bg-aqua"
+														type="button">
+														Randevu Al
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row my-md-3 my-2">
+						<div class="col">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h2 class="mb-0">
+											<div class="row">
+												<div class="col-md-9">
+													<button
+														class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+														type="button">
+														4.5/5 Kuaför Mehmet
+													</button>
+												</div>
+												<div class="col-md-3">
+													<button
+														class="btn collapsed width-100 text-center btn-primary bg-aqua border-aqua"
+														type="button">
+														Firmayı Görüntüle
+													</button>
+												</div>
+											</div>
+										</h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--END Results-->
+				</div>
+			</section>
+			<!-- END search->
+	
+	
+		</main>
+		<!-- BEGIN Footer-->
+			<footer class="shadow-lg">
+				<div class="container">
+					<div class="row py-5 align-items-center">
+						<div class="col-md-4 col-6">
+							<img class="icons-margin" src="images/instagram.svg" width="30px" height="30px">
+							<img class="icons-margin" src="images/twitter.svg" width="30px" height="30px">
+							<img class="icons-margin" src="images/facebook.svg" width="30px" height="30px">
+						</div>
+						<div class="col-md-4 col-6 py-2 py-md-0">
+							<div class="text-center">LOGO GELİCEK</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- END Footer-->
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<!-- Boostrap datetimepicker -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			moment.updateLocale('tr', { week: { dow: 1, } });
+			$('#datetimepicker').daterangepicker({
+				"singleDatePicker": true,
+				"autoApply": true,
+				"locale": {
+					"format": "MM/DD/YYYY",
+					"separator": " - ",
+					"applyLabel": "Apply",
+					"cancelLabel": "Cancel",
+					"fromLabel": "From",
+					"toLabel": "To",
+					"customRangeLabel": "Custom",
+					"weekLabel": "W",
+					"daysOfWeek": [
+						"Pt",
+						"Sa",
+						"Çar",
+						"Per",
+						"Cu",
+						"Ct",
+						"Pz",
+					],
+					"monthNames": [
+						"Ocak",
+						"Şubat",
+						"Mart",
+						"Nisan",
+						"Mayıs",
+						"Haziran",
+						"Temmuz",
+						"Ağustos",
+						"Eylül",
+						"Ekim",
+						"Kasım",
+						"Aralık"
+					],
+					"firstDay": 0
+				},
+				"drops": "auto"
+			});
+		})
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/extrastyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">	
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Randevu Sepeti'ne Hoşgeldiniz</title>
+</head>
+
+<body>
+	<div class="container-fluid p-0">
+		<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light navbar-back shadow">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<a class="navbar-brand navbar-link" href="#">
+					<img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
+						class="d-inline-block align-top" alt="">
+					Bootstrap
+				</a>
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link px-4 navbar-link" href="#top">Ana Sayfa <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-4 navbar-link" href="#kesfet">Keşfet</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link px-4 navbar-link" href="#ogren">Öğren</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<button class="btn btn-sign-in my-2 my-sm-0" type="submit">Giriş Yap</button>
+				</form>
+			</div>
+		</nav>
+		<main>
+			<!-- BEGIN Landing -->
+			<section class="pt-5 min-vh-100" id="landing" >
+				<div class="container pt-5">
+					<div class="row pt-3">
+						<div class="col">
+							<p class="text-center mainHead">Randevu Sistemi</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<p class="text-center minHeadBottom">Sisteme kayıtlı çeşitli şehirlerde kuaför, berber,
+								doktor
+								randevuları ve daha fazlası</p>
+						</div>
+					</div>
+					<div class="row pt-5 justify-content-center">
+						<div class="col-md-4 col-sm-12">
+							<input type="text" class="search-text form-control form-control-lg " placeholder="Arama">
+						</div>
+					</div>
+					<div class="row pt-3">
+						<div class="col-md-4 col-sm-12">
+							<div class="btn-group dropdowns dropdwonscenter">
+
+								<input type="text" class="form-control form-control-lg color-aqua" id="datetimepicker">
+								<!-- Datetime picker-->
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12 my-md-0 my-2">
+							<div class="btn-group dropdowns dropdwonscenter">
+								<select class="form-control form-control-lg color-aqua">
+									<option> Lokasyon </option>
+									<option> Another Action </option>
+									<option> Somethings Another Action </option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-12">
+							<div class="btn-group dropdowns">
+								<select class="form-control form-control-lg color-aqua">
+									<option> Kategori </option>
+									<option> Another Action </option>
+									<option> Somethings Another Action </option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<!-- BEGIN search button -->
+					<div class="row pt-5">
+						<div class="col-md-4 offset-md-4">
+							<div class="col-md-6 offset-md-3">
+								<button type="button" class="btn btn-secondary btn-lg searchButton">Arama</button>
+							</div>
+						</div>
+					</div>
+					<!-- END search button-->
+					<!-- BEGıN small icon -->
+					<div class="row py-5 justify-content-center">
+						<div class="col-md-1 col-4  pt-5">
+							<div class="icons">
+								<svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-wifi" fill="white"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M15.385 6.115a.485.485 0 0 0-.048-.736A12.443 12.443 0 0 0 8 3 12.44 12.44 0 0 0 .663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.717 2.164.204.148.489.13.668-.049z" />
+									<path
+										d="M13.229 8.271c.216-.216.194-.578-.063-.745A9.456 9.456 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.577 1.336c.205.132.48.108.652-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.472 6.472 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.408.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.611-.091l.015-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .708 0l.707-.707z" />
+								</svg>
+								<p class="text-center">Her Zaman</p>
+							</div>
+						</div>
+						<div class="col-md-1 col-4 pt-5">
+							<div class="icons">
+								<svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-signpost-split"
+									fill="white" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7 16h2V6H8V2h1v-.586a1 1 0 0 0-2 0V7h1v4H7v5z" />
+									<path fill-rule="evenodd"
+										d="M14 3H8v2h6l.75-1L14 3zM8 2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 .8-.4l.975-1.3a.5.5 0 0 0 0-.6L14.8 2.4A1 1 0 0 0 14 2H8zM2 8h6v2H2l-.75-1L2 8zm6-1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-.8-.4L.225 9.3a.5.5 0 0 1 0-.6L1.2 7.4A1 1 0 0 1 2 7h6z" />
+								</svg>
+								<p class="text-center">Her Yerde</p>
+							</div>
+						</div>
+						<div class="col-md-1 col-4 pt-5">
+							<div class="icons">
+								<svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-lightning-fill"
+									fill="white" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
+								</svg>
+								<p class="text-center">Hızlı</p>
+							</div>
+						</div>
+						<div class="col-md-1 col-4 pt-5">
+							<div class="icons">
+								<svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-calculator"
+									fill="white" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M12 1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+									<path
+										d="M4 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-2zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-4z" />
+								</svg>
+								<p class="text-center">Hesaplı</p>
+							</div>
+						</div>
+						<div class="col-md-1 col-4 pt-5">
+							<div class="icons">
+								<svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-clock-fill"
+									fill="white" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+								</svg>
+								<p class="text-center">Beklemeden</p>
+							</div>
+						</div>
+						<div class="col-md-1 col-4 pt-5">
+							<div class="icons">
+								<svg width="1.7em" height="1.7em" viewBox="0 0 16 16" class="bi bi-check2-circle"
+									fill="white" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd"
+										d="M15.354 2.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L8 9.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+									<path fill-rule="evenodd"
+										d="M8 2.5A5.5 5.5 0 1 0 13.5 8a.5.5 0 0 1 1 0 6.5 6.5 0 1 1-3.25-5.63.5.5 0 1 1-.5.865A5.472 5.472 0 0 0 8 2.5z" />
+								</svg>
+								<p class="text-center">Güvenilir</p>
+							</div>
+						</div>
+					</div>
+					<!-- END small icon-->
+
+
+				</div>
+			</section>
+			<!-- END Landing-->
+			<!-- BEGIN explore-->
+			<section id="explore">
+				<div class="container">
+					<div class="row pt-5">
+						<div class="col">
+							<p class="text-center section-two-header">Yeni İşletmeleri Keşfet</p>
+						</div>
+					</div>
+					<div class="row pt-3">
+						<div class="col">
+							<p class="text-center">Sistem üzerinde kayıtlı olan, insanların beğendiği ve sürekli
+								müşterisi
+								oldukları işletmeleri kullanma şansına eriş!
+							<p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-10 offset-md-1">
+							<div class="row pt-5 pb-5">
+								<div class="col-md-4">
+									<div class="row images">
+										<img src="images/1.jpg">
+									</div>
+									<div class="row">
+										<h4 class="pt-4 image-head">Kişisel Bakım</h4>
+										<p class="image-p pt-3">Bakımlı olmak kendini iyi hissetmeni ve özgüvenli olmanı
+											sağlar!
+										</p>
+										<div class="image-text pt-3">Yerlileri tarafından popüler olaarak görülen ve
+											müşterilerinin
+											memnun kaldığı kuaför vb. işletmeleri elinle koymuş gibi, sıra beklemeden
+											bul.
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="row images">
+										<img src="images/2.jpg">
+									</div>
+									<div class="row">
+										<h4 class="pt-4 image-head">Sağlık</h4>
+										<p class="image-p pt-3">Kendinden ve ailenden değerli olduğunu düşündüğün neyin
+											var
+											ki?
+										</p>
+										<div class="image-text pt-3">Sistemde kayıtlı olan hastanelere,diş hekimlerine
+											vb.
+											telefon
+											başında dakikalarını harcayarak randevu alma zahmetine ve iyi doktor aramaya
+											son.
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 pb-5">
+									<div class="row images">
+										<img src="images/3.jpg">
+									</div>
+									<div class="row pb-5">
+										<h4 class="pt-4 image-head">Tatil&Eğlence</h4>
+										<p class="image-p pt-3">Senede bir kere tatilin varsa en iyisi olması senin de
+											hakkın
+											değil
+											mi?</p>
+										<div class="image-text pt-3">Tatil sezonlarından önce randevu alma telaşı
+											olmadan
+											çeşitli
+											otellerde birbirinden eğlenceli aktiviteler ve turistlik gezilere anında
+											eriş.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--END explore -->
+			<!-- BEGIN ogren -->
+			<section id="learn">
+				<div class="container">
+					<div class="row py-5">
+						<div class="col-12">
+							<p class="text-center section-four-header">Hızlı ve Kolay Randevu Al</p>
+						</div>
+						<div class="col-12">
+							<div class="row pt-4">
+								<div class="col-md-4">
+									<table>
+										<tr>
+											<td class="section-four-numbers">1.</td>
+											<td>
+												<br><br>
+												<h4>Bir Kategori Seç</h4>
+												<p class="section-four-p">Çeşitli kategorilerden bir tanesini
+													dene &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+											</td>
+										</tr>
+										<td colspan="2">
+											<div class="section-four-text">Sağlıktan spora, eğlenceden kişisel
+												bakıma onlarca kategoriden istediğin alanı seçerek aradığını
+												bulma şansını arttır.</div>
+										</td>
+										<td>
+										</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-md-4 ">
+									<table>
+										<tr>
+											<td class="section-four-numbers">2.</td>
+											<td>
+												<br><br>
+												<h4>Firmayı Seç</h4>
+												<p class="section-four-p">Çıkan sonuçlardan uygun olduğunu
+													düşündüğünü seç</p>
+											</td>
+										</tr>
+										<td colspan="2">
+											<div class="section-four-text">Arama sonuçlarından istediğin firmayı
+												seç. Ancak diğer kullanıcıların verdiği puanları ihmal etme ki
+												istediğini bul.</div>
+										</td>
+										<td>
+										</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-md-4">
+									<table>
+										<tr>
+											<td class="section-four-numbers">3.</td>
+											<td>
+												<br><br>
+												<h4>Randuvuna Git</h4>
+												<p class="section-four-p">Almak için dakikalarını harcamadığın
+													randevuna git.</p>
+											</td>
+										</tr>
+										<td colspan="2">
+											<div class="section-four-text">Randevusunu aldığın firmaya
+												belirlediğin tarihte zaman zaybeder miyim korkusu olmadan
+												gitmenin tadına var.</div>
+										</td>
+										<td>
+										</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<!--END ogren -->
+		</main>
+		<!-- BEGIN Footer-->
+		<footer class="shadow-lg">
+			<div class="container">
+				<div class="row py-5 align-items-center">	
+					<div class="col-md-4 col-6">
+								<img class="icons-margin" src="images/instagram.svg" width="30px" height="30px">
+								<img class="icons-margin" src="images/twitter.svg" width="30px" height="30px">
+								<img class="icons-margin" src="images/facebook.svg" width="30px" height="30px">
+					</div>
+					<div class="col-md-4 col-6 py-2 py-md-0">
+						<div class="text-center">LOGO GELİCEK</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END Footer-->
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+		<!-- Boostrap datetimepicker -->
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				moment.updateLocale('tr', { week: { dow: 1, } });
+				$('#datetimepicker').daterangepicker({
+					"singleDatePicker": true,
+					"autoApply": true,
+					"locale": {
+						"format": "MM/DD/YYYY",
+						"separator": " - ",
+						"applyLabel": "Apply",
+						"cancelLabel": "Cancel",
+						"fromLabel": "From",
+						"toLabel": "To",
+						"customRangeLabel": "Custom",
+						"weekLabel": "W",
+						"daysOfWeek": [
+							"Pt",
+							"Sa",
+							"Çar",
+							"Per",
+							"Cu",
+							"Ct",
+							"Pz",
+						],
+						"monthNames": [
+							"Ocak",
+							"Şubat",
+							"Mart",
+							"Nisan",
+							"Mayıs",
+							"Haziran",
+							"Temmuz",
+							"Ağustos",
+							"Eylül",
+							"Ekim",
+							"Kasım",
+							"Aralık"
+						],
+						"firstDay": 0
+					},
+					"drops": "auto"
+				});
+			})
+		</script>
+
+</body>
+
+</html>
