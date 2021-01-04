@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuaför Hasan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="css/extrastyle.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light navbar-back shadow">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><a class="nav-link" data-widget="pushmenu" href="#"
+          role="button"><i class="fas fa-bars"></i></a>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link px-4 navbar-link" href="#top">Ana Sayfa <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 navbar-link" href="#kesfet">Keşfet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 navbar-link" href="#ogren">Öğren</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="dropdown">
+            <button class="btn btn-sign-in my-2 my-sm-0" type="button" data-toggle="dropdown">
+              Profilim
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Profilime Git</a>
+              <a class="dropdown-item" href="#">x Firmanız</a>
+              <a class="dropdown-item" href="#">y Firmanız</a>
+              <a class="dropdown-item" href="#">Firma Oluştur</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Çıkış Yap</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-aqua">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light  color-white">Randevu Sistemi</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex ">
+          <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="companyprofile.html" class="d-block  color-white">Kuaför Hasan</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="companyprofileupdate.html" class="nav-link">
+                <i class="nav-icon fas fa-building color-white"></i>
+                <p class="color-white">
+                  Firma Profili Güncelle
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companyarrangeapp.html" class="nav-link">
+                <i class="nav-icon fas fa-tasks color-white"></i>
+                <p class="color-white">
+                  Randevuları Ayarla
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companyservices.html" class="nav-link">
+                <i class="nav-icon fas fa-globe color-white"></i>
+                <p class="color-white">
+                  Hizmet İşlemleri
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companyapps.html" class="nav-link">
+                <i class="nav-icon fas fa-thumbtack color-white"></i>
+                <p class="color-white">
+                  Randevular
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companycomments.html" class="nav-link">
+                <i class="nav-icon fas fa-comment-alt color-white"></i>
+                <p class="color-white">
+                  Aldığınız Yorumlar
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6 mt-md-2 mt-2">
+              <h1>Aktif & Güncel Randevular</h1>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <!-- Main Body Start -->
+        <div class="card">
+          <div class="card-body">
+            <div class="bd-example bd-example-tabs">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active show" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true">Aktif Randevular</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">Geçmiş Randevular</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  <!-- Active Appointments Start -->
+                  <div class="card">
+                    <h5 class="card-header text-center">Aktif Randevular</h5>
+                    <div class="card-body">
+                      <div class="row my-md-3 my-2">
+                        <div class="col">
+                          <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <div class="row">
+                                    <div class="col-md-9">
+                                      <button
+                                        class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Mesut Yılmaz - Saat : 12:45 - Saç Traşı
+                                      </button>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <button class="btn btn-block btn-danger mt-md-1 mt-1" type="button"
+                                        data-toggle="modal" data-target="#delete">
+                                        İptal Et
+                                      </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                      <button class="btn btn-link width-100 " type="button" data-toggle="collapse"
+                                        data-target="#collapseOne">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#007bff"
+                                          class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class="row  my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı
+                                        :
+                                      </span>
+                                    </div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Mesut
+                                        Yılmaz
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti
+                                        Vericek
+                                        Kişi : </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan
+                                        Yalçın</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilecek
+                                        Hizmet :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Saç
+                                        Traşı</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Tarihi :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">17/12/2020</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Saati :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">12:45</span></div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri
+                                        Telefonu :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">0123456789</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row my-md-3 my-2">
+                        <div class="col">
+                          <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <div class="row">
+                                    <div class="col-md-9">
+                                      <button
+                                        class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+                                        type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Kemal Kutlu - Saat : 09:45 - Sakal Traşı
+                                      </button>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <button class="btn btn-block btn-danger mt-md-1 mt-1" type="button"
+                                        data-toggle="modal" data-target="#delete">
+                                        İptal Et
+                                      </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                      <button class="btn btn-link width-100 " type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#007bff"
+                                          class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class="row  my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı
+                                        :
+                                      </span>
+                                    </div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Kemal
+                                        Kutlu
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti
+                                        Vericek
+                                        Kişi : </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan
+                                        Yalçın</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilecek
+                                        Hizmet :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Sakal
+                                        Traşı</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Tarihi :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">17/12/2020</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Saati :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">12:45</span></div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri
+                                        Telefonu :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">0123456789</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row my-md-3 my-2">
+                        <div class="col">
+                          <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <div class="row">
+                                    <div class="col-md-9">
+                                      <button
+                                        class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+                                        type="button" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Kerim Gül - Saat : 15:45 - Saç Traşı
+                                      </button>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <button class="btn btn-block btn-danger mt-md-1 mt-1" type="button"
+                                        data-toggle="modal" data-target="#delete">
+                                        İptal Et
+                                      </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                      <button class="btn btn-link width-100 " type="button" data-toggle="collapse"
+                                        data-target="#collapseThree">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#007bff"
+                                          class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class="row  my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı
+                                        :
+                                      </span>
+                                    </div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Mesut
+                                        Yılmaz
+                                      </span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti
+                                        Vericek
+                                        Kişi : </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan
+                                        Yalçın</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilecek
+                                        Hizmet :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Saç
+                                        Traşı</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Tarihi :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">17/12/2020</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Saati :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">12:45</span></div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri
+                                        Telefonu :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">0123456789</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.Active Appointments End -->
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  <!-- Passed Appointments Start -->
+                  <div class="card">
+                    <h5 class="card-header text-center">Geçmiş Randevu Listeniz</h5>
+                    <div class="card-body">
+                      <div class="row my-md-3 my-2">
+                        <div class="col">
+                          <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <div class="row">
+                                    <div class="col-md-11">
+                                      <button
+                                        class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+                                        type="button" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        Mesut Yılmaz  - Saat : 12:45 - Saç Traşı
+                                      </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                      <button class="btn btn-link width-100 " type="button" data-toggle="collapse"
+                                        data-target="#collapseOne">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#007bff"
+                                          class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class="row  my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı
+                                        :
+                                      </span>
+                                    </div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Mesut
+                                        Yılmaz</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti
+                                        Veren
+                                        Kişi : </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan
+                                        Yalçın</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilen
+                                        Hizmet :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Saç
+                                        Traşı</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Tarihi :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">17/12/2020</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Saati :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">12:45</span></div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri
+                                        Telefonu :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">0123456789</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row my-md-3 my-2">
+                        <div class="col">
+                          <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <div class="row">
+                                    <div class="col-md-11">
+                                      <button
+                                        class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+                                        type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                        aria-expanded="false" aria-controls="collapseTwo">
+                                        Kemal Kutlu - Saat : 09:45 - Saç Traşı
+                                      </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                      <button class="btn btn-link width-100 " type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#007bff"
+                                          class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class="row  my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı
+                                        :
+                                      </span>
+                                    </div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Mesut
+                                        Yılmaz</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti
+                                        Veren
+                                        Kişi : </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan
+                                        Yalçın</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilen
+                                        Hizmet :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Saç
+                                        Traşı</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Tarihi :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">17/12/2020</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Saati :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">12:45</span></div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri
+                                        Telefonu :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">0123456789</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row my-md-3 my-2">
+                        <div class="col">
+                          <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <div class="row">
+                                    <div class="col-md-11">
+                                      <button
+                                        class="btn btn-link collapsed width-100 text-left color-like-black font-size-1-3rem"
+                                        type="button" data-toggle="collapse" data-target="#collapseThree"
+                                        aria-expanded="false" aria-controls="collapseThree">
+                                        Kerim Gül - Saat : 15:45 - Saç Traşı
+                                      </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                      <button class="btn btn-link width-100 " type="button" data-toggle="collapse"
+                                        data-target="#collapseThree">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#007bff"
+                                          class="bi bi-caret-down-square-fill" viewBox="0 0 16 16">
+                                          <path fill-rule="evenodd"
+                                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4 4a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 0 0 .748 0l4-4.5A.5.5 0 0 0 12 6H4z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <div class="row  my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı
+                                        :
+                                      </span>
+                                    </div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Mesut
+                                        Yılmaz</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti
+                                        Veren
+                                        Kişi : </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan
+                                        Yalçın</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilen
+                                        Hizmet :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Saç
+                                        Traşı</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Tarihi :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">17/12/2020</span>
+                                    </div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu
+                                        Saati :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">12:45</span></div>
+                                  </div>
+                                  <div class="row my-md-1 my-1">
+                                    <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri
+                                        Telefonu :
+                                      </span></div>
+                                    <div class="col-md-9 col-12 my-md-1 my-1"><span
+                                        class="font-size-1-1rem">0123456789</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.Passed Appointments End -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Main Body End -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- BEGIN Modal ActiveDelete-->
+    <div class="modal fade bd-example-modal-lg" id="delete" tabindex="-1" role="dialog"
+      aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Randevu İptal Ekranı</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card-body">
+              <div class="row  my-md-1 my-1">
+                <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Adı : </span>
+                </div>
+                <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Mesut Yılmaz</span>
+                </div>
+              </div>
+              <div class="row my-md-1 my-1">
+                <div class="col-md-3 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hizmeti Vericek
+                    Kişi : </span></div>
+                <div class="col-md-9 col-12 my-md-1 my-2"><span class="font-size-1-1rem">Hasan Yalçın</span>
+                </div>
+              </div>
+              <div class="row my-md-1 my-1">
+                <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Verilecek Hizmet :
+                  </span></div>
+                <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Saç Traşı</span>
+                </div>
+              </div>
+              <div class="row my-md-1 my-1">
+                <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu Tarihi :
+                  </span></div>
+                <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">17/12/2020</span>
+                </div>
+              </div>
+              <div class="row my-md-1 my-1">
+                <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Randevu Saati :
+                  </span></div>
+                <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">12:45</span></div>
+              </div>
+              <div class="row my-md-1 my-1">
+                <div class="col-md-3 col-12 my-md-1 my-1"><span class="font-size-1-1rem">Müşteri Telefonu :
+                  </span></div>
+                <div class="col-md-9 col-12 my-md-1 my-1"><span class="font-size-1-1rem">0123456789</span></div>
+              </div>
+              <div class="row my-md-1 my-1">
+                <div class="col-md-12 col-12 my-md-1 my-1"><span class="font-size-1-3rem">Yukarıdaki bilgilerle olan
+                    müşterinin randevusunu iptal etmek istiyor musunuz? Bu işlem geri alınamaz.
+                  </span></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger">İptal Et</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END Modal ActiveDelete-->
+    <!-- BEGIN Footer-->
+    <footer class="shadow-lg">
+      <div class="container">
+        <div class="row py-5 align-items-center">
+          <div class="col-md-4 col-6 offset-md-1">
+            <img class="icons-margin" src="images/instagram.svg" width="30px" height="30px">
+            <img class="icons-margin" src="images/twitter.svg" width="30px" height="30px">
+            <img class="icons-margin" src="images/facebook.svg" width="30px" height="30px">
+          </div>
+          <div class="col-md-4 col-6 py-2 py-md-0">
+            <div class="text-center">LOGO GELİCEK</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer-->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+</body>
+
+</html>

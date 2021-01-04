@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuaför Hasan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="css/extrastyle.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light navbar-back shadow">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01"><a class="nav-link" data-widget="pushmenu" href="#"
+          role="button"><i class="fas fa-bars"></i></a>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link px-4 navbar-link" href="#top">Ana Sayfa <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 navbar-link" href="#kesfet">Keşfet</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4 navbar-link" href="#ogren">Öğren</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="dropdown">
+            <button class="btn btn-sign-in my-2 my-sm-0" type="button" data-toggle="dropdown">
+              Profilim
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Profilime Git</a>
+              <a class="dropdown-item" href="#">x Firmanız</a>
+              <a class="dropdown-item" href="#">y Firmanız</a>
+              <a class="dropdown-item" href="#">Firma Oluştur</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Çıkış Yap</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 bg-aqua">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light  color-white">Randevu Sistemi</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex ">
+          <div class="image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="companyprofile.html" class="d-block  color-white">Kuaför Hasan</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a href="companyprofileupdate.html" class="nav-link">
+                <i class="nav-icon fas fa-building color-white"></i>
+                <p class="color-white">
+                  Firma Profili Güncelle
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companyarrangeapp.html" class="nav-link">
+                <i class="nav-icon fas fa-tasks color-white"></i>
+                <p class="color-white">
+                  Randevuları Ayarla
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companyservices.html" class="nav-link">
+                <i class="nav-icon fas fa-globe color-white"></i>
+                <p class="color-white">
+                  Hizmet İşlemleri
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companyapps.html" class="nav-link">
+                <i class="nav-icon fas fa-thumbtack color-white"></i>
+                <p class="color-white">
+                  Randevular
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="companycomments.html" class="nav-link">
+                <i class="nav-icon fas fa-comment-alt color-white"></i>
+                <p class="color-white">
+                  Aldığınız Yorumlar
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6 mt-md-2 mt-2">
+              <h1>Randevu Ayarlama</h1>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+          <h5 class="card-header text-center">Randevu Ayarlama Bilgileri</h5>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">PAZARTESİ</span></div>
+                  <div class="card-body text-dark">
+                    <span>Başlangıç Saati : 09:00</span><br>
+                    <span>Bitiş Saati : 18:00</span><br>
+                    <span>Periyot : 45 Dakika</span><br>
+                    <span>Mola Saati : 12:00 - 13:00</span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">SALI</span></div>
+                  <div class="card-body text-dark">
+                    <span>Başlangıç Saati : 09:00</span><br>
+                    <span>Bitiş Saati : 18:00</span><br>
+                    <span>Periyot : 45 Dakika</span><br>
+                    <span>Mola Saati : 12:00 - 13:00</span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">ÇARŞAMBA</span></div>
+                  <div class="card-body text-dark">
+                    <span>Başlangıç Saati : 09:00</span><br>
+                    <span>Bitiş Saati : 18:00</span><br>
+                    <span>Periyot : 45 Dakika</span><br>
+                    <span>Mola Saati : 12:00 - 13:00</span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">PERŞEMBE</span></div>
+                  <div class="card-body text-dark">
+                    <span>Başlangıç Saati : 09:00</span><br>
+                    <span>Bitiş Saati : 18:00</span><br>
+                    <span>Periyot : 45 Dakika</span><br>
+                    <span>Mola Saati : 12:00 - 13:00</span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">CUMA</span></div>
+                  <div class="card-body text-dark">
+                    <span>Başlangıç Saati : 09:00</span><br>
+                    <span>Bitiş Saati : 18:00</span><br>
+                    <span>Periyot : 45 Dakika</span><br>
+                    <span>Mola Saati : 12:00 - 13:00</span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">CUMARTESİ</span></div>
+                  <div class="card-body text-dark">
+                    <span>Başlangıç Saati : 09:00</span><br>
+                    <span>Bitiş Saati : 18:00</span><br>
+                    <span>Periyot : 45 Dakika</span><br>
+                    <span>Mola Saati : 12:00 - 13:00</span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-dark mb-3">
+                  <div class="card-header text-center"><span class="font-weight-500 font-size-1-6rem">PAZAR</span></div>
+                  <div class="card-body text-dark">
+                    <span><del>Başlangıç Saati :</del></span><br>
+                    <span><del>Bitiş Saati :</del></span><br>
+                    <span><del>Periyot :</del></span><br>
+                    <span><del>Mola Saati :</del></span><br>
+                  </div>
+                  <div class="card-footer text-right">
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#start-for-app">Güncelle</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- BEGIN Footer-->
+    <footer class="shadow-lg">
+      <div class="container">
+        <div class="row py-5 align-items-center">
+          <div class="col-md-4 col-6 offset-md-1">
+            <img class="icons-margin" src="images/instagram.svg" width="30px" height="30px">
+            <img class="icons-margin" src="images/twitter.svg" width="30px" height="30px">
+            <img class="icons-margin" src="images/facebook.svg" width="30px" height="30px">
+          </div>
+          <div class="col-md-4 col-6 py-2 py-md-0">
+            <div class="text-center">LOGO GELİCEK</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END Footer-->
+		<div class="modal fade bd-example-modal-lg" id="start-for-app" tabindex="-1" role="dialog"
+    aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Randevu Ayarlama Bilgilerinizi Giriniz</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-center mt-md-2 mt-2">
+            <div class="col-md-6 col-12">
+              <h4 class="color-aqua">Seçilen Gün : Pazartesi</h4>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-md-2 mt-2">
+            <div class="col-md-3 col-12">
+              <label class="color-aqua">Başlangıç Saati : </label>
+              <input type="text" class="form-control form-control-md color-aqua" id="startHour">
+            </div>
+            <div class="col-md-3 col-12">
+              <label class="color-aqua">Bitiş Saati : </label>
+              <input type="text" class="form-control form-control-md color-aqua" id="endHour">
+            </div>
+          </div>
+          <div class="row justify-content-center mt-md-2 mt-2">
+            <div class="col-md-6 col-12">
+              <label class="color-aqua">Periyot : </label>
+              <input type="text" class="form-control form-control-md color-aqua" id="periot">
+            </div>
+          </div>
+          
+          <div class="row justify-content-center mt-md-2 mt-2">
+            <div class="col-md-3 col-12">
+              <label class="color-aqua">Mola Başlangıç Saati : </label>
+              <input type="text" class="form-control form-control-md color-aqua" id="breakStartHour">
+            </div>
+            <div class="col-md-3 col-12">
+              <label class="color-aqua">Mola Bitiş Saati : </label>
+              <input type="text" class="form-control form-control-md color-aqua" id="breakEndHour">
+            </div>
+          </div>
+          <div class="row justify-content-center mt-md-2 mt-2 ml-md-0 ml-3">
+            <div class="col-md-5 col-12">
+              <br>
+              <input type="checkbox" class="form-check-input" id="isOn">
+              <label class="form-check-label">Bu günü tatil olarak ayarla</label>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info">Güncelle</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">İptal Et</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END Modal -->
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="dist/js/demo.js"></script>
+</body>
+
+</html>

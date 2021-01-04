@@ -189,11 +189,23 @@ table h4{
 {
 	color:#ffffff !important;
 }
+.bg-e4e1e1{
+	background:#e4e1e1;
+}
+.color-484848{
+	color:#484848;
+}
 .font-size-1-3rem{
 	font-size: 1.3rem;
 }
+.font-size-1-4rem{
+	font-size: 1.4rem;
+}
 .font-size-1-1rem{
 	font-size: 1.1rem;
+}
+.font-size-0-9rem{
+	font-size: 0.9rem;
 }
 .font-size-1-6rem{
 	font-size: 1.6rem;
